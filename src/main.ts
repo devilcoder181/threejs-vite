@@ -30,3 +30,15 @@ const renderer: any = new THREE.WebGLRenderer({
 renderer.setSize(size.width, size.height)
 
 renderer.render(scene, camera)
+
+
+const tick = () => {
+
+    square.rotation.y += 0.01;
+    square.rotation.x += 0.01;
+
+    renderer.render(scene, camera)
+    window.requestAnimationFrame(tick)
+}
+
+tick()
