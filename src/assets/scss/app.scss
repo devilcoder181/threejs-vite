@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #ccced8;
+  background-color: #15161c;
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+  position: relative;
+  min-width: 75%;
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 1em 0;
+  z-index: 99;
+  padding: 1em 5vw;
+
+  .nav_{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+
+    h1{
+      position: relative;
+      display: block;
+      margin: 0;
+      padding: 0;
+      font-size: 1.75vw;
+      font-weight: 500;
+
+      span{
+        position: relative;
+        color: #7a67ff;
+      }
+    }
+
+   
+  }
+
+}
+
+.btn_{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: auto;
+  height: auto;
+  padding: 0.75em 2em;
+  border-radius: 0.5em;
+  border: none;
+  background: #7a67ff;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+
+  &:hover{
+    background: darken(#7a67ff, 10%);
+  }
+
+  &.green_{
+    background: #00dd81;
+
+    &:hover{
+      background: darken(#00dd81, 10%);
+    }
+  
+  }
+
+}
+
+.title_{
+  position: relative;
+  display: block;
+  font-weight: 600;
+  margin: 0;
+  line-height: 2;
+  font-size: 2vw;
+  margin-bottom: 0.25em;
+}
+
+.btn_group{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  button{
+    margin-inline-start: 0.5em;
+  }
+}
+
+.banner_{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  canvas {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+  }
+}
